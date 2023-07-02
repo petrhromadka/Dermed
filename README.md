@@ -6,5 +6,5 @@ Spuštění aplikace
 $ npm start 
 
 
-Tailwindcss, daisyUI, SQLite 
+Tailwindcss, daisyUI, SQLite, Font Awesome icons 
 
