@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>Dashboard</title>
+  </head>
+  <body class="text-black">
+    <div class="text-center absolute right-5 mt-8">
+      <a href="/index.html" class="btn btn-outline btn-primary">Main Page</a>
+    </div>
+    <h1 class="text-center text-4xl py-5">Dashboard</h1>
+    <!-- Zobrazení pouze pro přihlášeného uživatele -->
+    <div id="dashboardContent" class="hidden">
+      <form id="postForm" class="form-control">
+        <label for="postDate" class="label">Datum příspěvku:</label>
+        <input
+          type="date"
+          id="postDate"
+          name="postDate"
+          class="input input-bordered w-1/2"
+        />
+        <label for="postTitle" class="label">Titulek:</label>
+        <input
+          type="text"
+          id="postTitle"
+          name="postTitle"
+          class="input input-bordered w-1/2"
+        />
+        <label for="postContent" class="label">Nový příspěvek:</label>
+        <textarea
+          id="postContent"
+          name="postContent"
+          class="textarea textarea-bordered w-1/2 h-20"
+        ></textarea>
+        <input
+          type="submit"
+          value="Přidat příspěvek"
+          class="btn btn-primary mt-5"
+        />
+      </form>
+
+      <div id="posts" class="mt-5 px-5"></div>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/dashboard.js"></script>
+  </body>
+</html>

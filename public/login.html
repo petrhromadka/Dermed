@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>Přihlášení</title>
+  </head>
+  <body class="text-black">
+    <h1 class="text-center text-4xl py-5">Přihlásit se</h1>
+
+    <form id="loginForm" class="flex flex-col items-center">
+      <label for="username" class="mb-2">Uživatelské jméno:</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        class="mb-4 p-2 border border-white rounded w-64"
+      />
+      <label for="password" class="mb-2">Heslo:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        class="mb-4 p-2 border border-white rounded w-64"
+      />
+      <input
+        type="submit"
+        value="Přihlásit se"
+        class="px-4 py-2 border border-white rounded bg-white text-blue-500 cursor-pointer"
+      />
+    </form>
+
+    <script src="./js/login.js"></script>
+  </body>
+</html>
